@@ -1,5 +1,6 @@
 import type { ReactElement } from "react";
 import { styled } from "@mui/system";
+import { Navbar } from "../navbar";
 
 const StyledContainer = styled("div")({
   display: "flex",
@@ -8,7 +9,11 @@ const StyledContainer = styled("div")({
 });
 
 export const MainLayout = (): ReactElement => {
-  return <StyledContainer>hello</StyledContainer>;
+  return (
+    <StyledContainer>
+      <Navbar></Navbar>
+    </StyledContainer>
+  );
 };
 
 export default MainLayout;
